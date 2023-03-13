@@ -1,0 +1,98 @@
+:root {
+  --darkColor: #333;
+  --lightColor: #ededed;
+}
+
+* {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+html {
+  min-height: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.board {
+  width: 70vh;
+  height: 70vh;
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.flexContainer {
+  background-color: var(--lightColor);
+  color: var(--darkColor);
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  width: 20vh;
+  gap: 1.5rem;
+  margin: 0px 2rem;
+}
+
+.button button {
+  color: var(--lightColor);
+  border-radius: 0.3rem;
+  padding: 10px 0px;
+  font-size: 1.2rem;
+}
+
+.blackButton {
+  background-color: black;
+}
+
+.redButton {
+  background: red;
+}
+
+.random {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+.otherButton {
+  background-color: var(--darkColor);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: var(--darkColor);
+  font-size: 1.3rem;
+  gap: 1rem;
+}
+
+.fa-github {
+  color: var(--darkColor);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
